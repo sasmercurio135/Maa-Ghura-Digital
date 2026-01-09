@@ -1,9 +1,161 @@
-<docktype.html>
-<Html>
-    <head>
-        <title>MK tours & Travels</title>
-    </head>
-    <body>
-        <p>Hello welcome to MK trvales no PHP and HTml or JS used</p>
-    </body>
-</Html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MK Tours & Travels</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- meta for theme color -->
+  <meta name="theme-color" content="#0b67a3">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">MK Tours & Travels</a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="hamburger"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" role="navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Explore. Relax. Remember.</h1>
+          <p>Personalized packages, local guides, and seamless bookings — your journey starts with MK Tours & Travels.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#contact">Get a Quote</a>
+            <a class="btn outline" href="#destinations">See Destinations</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <!-- update with an image from your assets folder -->
+          <img src="https://source.unsplash.com/640x480/?travel,beach" alt="Travel destination">
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="grid services-grid">
+          <article class="card">
+            <h3>Custom Packages</h3>
+            <p>Tailor-made itineraries for families, couples, and solo travelers.</p>
+          </article>
+          <article class="card">
+            <h3>Flight & Hotel</h3>
+            <p>Convenient booking with competitive rates and trusted partners.</p>
+          </article>
+          <article class="card">
+            <h3>Local Guides</h3>
+            <p>Experienced local guides who bring destinations to life.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations" class="section destinations">
+      <div class="container">
+        <h2 class="section-title">Popular Destinations</h2>
+
+        <div class="destinations-grid" id="destinations-grid">
+          <div class="dest-card">
+            <img src="https://source.unsplash.com/400x300/?mountain" alt="Mountain destination">
+            <div class="dest-card-body">
+              <h4>Himalayan Escape</h4>
+              <p>Adventure treks and scenic views.</p>
+            </div>
+          </div>
+
+          <div class="dest-card">
+            <img src="https://source.unsplash.com/400x300/?beach" alt="Beach destination">
+            <div class="dest-card-body">
+              <h4>Tropical Beaches</h4>
+              <p>Sun, sea, and relaxation packages.</p>
+            </div>
+          </div>
+
+          <div class="dest-card">
+            <img src="https://source.unsplash.com/400x300/?city" alt="City destination">
+            <div class="dest-card-body">
+              <h4>City Breaks</h4>
+              <p>Culture, food tours and city sightseeing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-grid">
+          <form id="contact-form" class="contact-form" action="#" method="post" novalidate>
+            <label>
+              Full name
+              <input type="text" name="name" id="name" required placeholder="Your name">
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" id="email" required placeholder="you@example.com">
+            </label>
+
+            <label>
+              Phone (optional)
+              <input type="tel" name="phone" id="phone" placeholder="+8801XXXXXXXXX">
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" id="message" rows="4" placeholder="Tell us about your trip" required></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button class="btn primary" type="submit">Send Message</button>
+            </div>
+          </form>
+
+          <div class="contact-info">
+            <h3>MK Tours & Travels</h3>
+            <p>We design travel experiences with care. Reach us to get a personalized quote.</p>
+            <ul class="info-list">
+              <li>Email: <a href="mailto:info@mktours.com">info@mktours.com</a></li>
+              <li>Phone: <a href="tel:+8801000000000">+880 1XXXXXXXXX</a></li>
+              <li>Office: Dhaka, Bangladesh</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> MK Tours & Travels — All rights reserved</p>
+      <small>Built with care • <a href="#contact">Contact us</a></small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
