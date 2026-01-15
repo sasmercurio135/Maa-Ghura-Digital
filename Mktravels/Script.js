@@ -1,4 +1,5 @@
 // Basic interactivity for the MK Tours & Travels landing page
+// sas--//
 
 document.addEventListener('DOMContentLoaded', function () {
   // set year in footer
@@ -66,4 +67,5 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
+
 });
