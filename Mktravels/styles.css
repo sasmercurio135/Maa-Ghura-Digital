@@ -21,7 +21,7 @@ body{
   line-height:1.55;
 }
 
-/* container */
+/* money singh drum  */
 .container{
   width:90%;
   max-width:var(--max-width);
@@ -145,4 +145,5 @@ body{
   .destinations-grid{grid-template-columns:1fr}
   .services-grid{grid-template-columns:1fr}
   .hero-copy h1{font-size:1.5rem}
+
 }
